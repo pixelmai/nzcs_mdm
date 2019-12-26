@@ -1,0 +1,73 @@
+  <header id="main_navigation" data-sticky-container>
+    <div class="sticky" data-sticky-on="small" data-sticky>
+      <div class="grid-container">
+
+
+      <div class="grid-x grid-padding-x">
+
+        <!-- START Telephone numbers -->
+          <div id="tel" class="cell small-12 show-for-large">
+            <ul class="menu align-right">
+              <li>
+                <em>Wanganui</em>
+                <strong>06 348 2450</strong>
+              </li>
+              <li>
+                <em>New Plymouth</em>
+                <strong>06 927 3404</strong>
+              </li>
+              <li>
+                <em>Tollfree</em>
+                <strong>0800 895 210</strong>
+              </li>
+            </ul>
+          </div>
+        <!-- END Telephone numbers -->
+    
+
+        
+        <!-- S Top Bar -->
+        <div id="nav_menu" class="cell large-12">
+          <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="large">
+            <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+            <div class="title-bar-title">
+              <a href="/" id="mobile_title_bar_logo" class="hide-for-large">
+                <%= partial "images/nzcs_logo.svg" %>
+              </a>
+            </div>
+          </div>
+
+          <div class="top-bar" id="responsive-menu">
+            <div class="top-bar-left">
+              <ul class="menu">
+                <li class="show-for-large">
+                  <a href="/" id="title_logo">
+                    <%= partial "images/nzcs_logo.svg" %>
+                  </a>
+                </li>
+                <li <% if current_page.data.main_nav_sel == 'home' %>class="current-menu-item"<% end %>><a href="index.html"><span>Home</span></a></li>
+                <li <% if current_page.data.main_nav_sel == 'services' %>class="current-menu-item"<% end %>><a href="services.html"><span>Services</span></a></li>
+                <li <% if current_page.data.main_nav_sel == 'about' %>class="current-menu-item"<% end %>><a href="about.html"><span>About</span></a></li>
+                <li <% if current_page.data.main_nav_sel == 'contact' %>class="current-menu-item"<% end %>><a href="contact.html"><span>Contact</span></a></li>
+              </ul>
+            </div>
+            <div class="top-bar-right">
+              <ul class="menu">
+                <li><a href="about.html">Free Consultation</a></li>
+                <li><a href="contact.html" class="button">Login</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- E Top Bar -->
+
+
+      </div>
+
+
+      </div>
+    </div>
+  </header>
+
+
+

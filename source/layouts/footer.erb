@@ -1,0 +1,54 @@
+<footer>
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="cell large-5">
+          <p>
+            <strong>New Zealand Computing Solutions</strong><br />
+            182 Glasgow Street, PO Box 7205, Wanganui, New Zealand<br />
+            Tollfree  0800 111 106
+          </p>
+        </div>
+        <div class="cell large-7">
+          <ul class="menu">
+            <li <% if current_page.data.main_nav_sel == 'home' %>class="current-menu-item"<% end %>><a href="index.html"><span>Home</span></a></li>
+            <li <% if current_page.data.main_nav_sel == 'services' %>class="current-menu-item"<% end %>><a href="services.html"><span>Services</span></a></li>
+            <li <% if current_page.data.main_nav_sel == 'about' %>class="current-menu-item"<% end %>><a href="about.html"><span>About</span></a></li>
+            <li <% if current_page.data.main_nav_sel == 'contact' %>class="current-menu-item"<% end %>><a href="contact.html"><span>Contact</span></a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="grid-x grid-padding-x">
+        <div class="copy_sm cell large-5">
+          <%= partial "images/logo_sym.svg" %>
+          <span class="copyright">Copyright &copy; 2019 NZCS</span>
+        </div>
+        <div class="cell large-7">
+          <ul class="sm_links_container">
+            <li>
+              <a href="" class="sm_links sm_fb" title="Facebook">
+                <%= partial "images/icon_fb.svg" %>
+              </a>
+            </li>
+            <li>
+              <a href="" class="sm_links sm_tw" title="Twitter">
+                <%= partial "images/icon_tw.svg" %>
+              </a>
+            </li>
+            <li>
+              <a href="" class="sm_links sm_in" title="LinkedIn">
+                <%= partial "images/icon_in.svg" %>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+</footer>

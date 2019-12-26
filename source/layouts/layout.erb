@@ -1,0 +1,56 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= current_page.data.title + " - New Zealand Computing Solutions" %></title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap" rel="stylesheet" />
+
+    <link href="stylesheets/foundation.min.css" rel="stylesheet" />
+    <link href="stylesheets/slick.css" rel="stylesheet" />
+    <link href="stylesheets/slick-theme.css" rel="stylesheet" />
+    <link href="stylesheets/site.css" rel="stylesheet" />
+    <link href="stylesheets/svg.css" rel="stylesheet" />
+    <link href="stylesheets/ie_only.css" rel="stylesheet" />
+
+  </head>
+
+  <body<% if current_page.data.body_id? %> class="<%= current_page.data.body_id %>"<% end %>>
+
+
+    <%= partial "layouts/nav_main" %>
+
+
+
+
+
+    <div class="<%= current_page.data.cont_class %><% if current_page.data.tablet_snap_off == 'yup' %> toggle_snap_off<% end %>">
+
+      <%= yield %>
+
+      
+
+      <% if current_page.data.body_id != 'snap_body' %>
+        <%= partial "layouts/footer" %>
+      <% end %>
+
+      
+
+    </div> <!-- NZCS Container -->
+
+
+
+
+    <script src="javascripts/jquery.min.js"></script>
+    <script src="javascripts/foundation.min.js"></script>
+    <script src="javascripts/what-input.min.js"></script>
+    <script src="javascripts/slick.min.js"></script>
+    <script src="javascripts/site.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
