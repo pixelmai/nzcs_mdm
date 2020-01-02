@@ -1294,8 +1294,55 @@
         }
       }
 
+      .tailor{
+        .bottom_action_cont{
+          background: #fffdec;
+          border: 1px solid #daf1f2;
+          display: block;
+          width: 100%;
+          margin: 40px 0;
+          padding: 30px;
+          -webkit-border-radius: 20px;
+          -moz-border-radius: 20px;
+          border-radius: 20px;
+        }
+
+        .cell{
+          background-image: url('../images/services_page/bg_tailor.svg');
+          background-position: right top;
+          background-repeat: no-repeat;
+          background-size: contain;
+          align-items: center;
+          margin: 0;
+          padding: 20px 0;
+
+          p{
+            margin: 0;
+          }
+
+    
+          h2{
+            color: #e3610b;
+            font-size: 3em;
+            font-weight: 300;
+            line-height: 1.2em;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 600;
+          }
+
+          a.button{
+            margin: 0;
+          }
+
+
+        }
+      }
+
     }
   }
+
+
 
 
 /* SERVICES PAGE */
